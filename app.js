@@ -1,7 +1,11 @@
 
 'use strict'
 requirejs.config({
-    baseUrl: '/app/',
+    /**
+     /app/ does work on desktop browsers but not in phonegap
+     app/ works in phonegap but not in desktop browsers
+     */
+    baseUrl: 'app/',
     urlArgs: "bust=35w", //+ (new Date()).getTime(),
     paths: {
         'jquery': 'libs/jquery/jquery-2.0.3.min',

@@ -16,7 +16,7 @@ define(['chaplin', 'views/base/view', 'text!templates/topbar.hbs'], function (Ch
         redirectToCorrectSettings: function () {
             this.$('#topbarLeftContainer').html('<span id="topbarLeft" class="surveyIconCol glyphicon glyphicon-chevron-left"></span>');
             this.$('#topbarLeftContainer').bind('click', self.goBack);
-                return Chaplin.helpers.redirectTo('survey#show');
+                return Chaplin.helpers.redirectTo('settings#show');
         },
         redirectToSettings: function () {
             return self.redirectToCorrectSettings();
